@@ -1,2 +1,0 @@
-# .com
-Informasi teknologi
