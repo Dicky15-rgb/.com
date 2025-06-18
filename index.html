@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Produk ke BukaOlshop</title>
+  <style>
+    body { font-family: sans-serif; background: #f4f4f4; padding: 20px; }
+    form { background: white; padding: 20px; border-radius: 8px; max-width: 500px; margin: auto; }
+    input, textarea, select { width: 100%; margin-bottom: 10px; padding: 8px; }
+    button { padding: 10px; background: blue; color: white; border: none; border-radius: 5px; }
+  </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Form Upload Produk ke BukaOlshop</h2>
+
+<form action="https://yourhosting.com/upload_produk.php" method="POST">
+  <input name="nama_barang" placeholder="Nama Produk" required>
+  <textarea name="deskripsi_panjang" placeholder="Deskripsi Panjang" required></textarea>
+  <input name="harga_barang" type="number" placeholder="Harga Jual" required>
+  <input name="harga_modal" type="number" placeholder="Harga Modal" required>
+  <input name="stok_barang" type="number" placeholder="Stok" required>
+  <input name="url_gambar_barang_1" placeholder="URL Gambar 1" required>
+  <input name="url_gambar_barang_2" placeholder="URL Gambar 2" required>
+
+  <input type="hidden" name="id_kategori" value="26324">
+  <input type="hidden" name="id_lokasi" value="18696">
+  <input type="hidden" name="jenis_barang" value="digital">
+  <input type="hidden" name="deskripsi_singkat" value="Produk digital via API">
+  <input type="hidden" name="berat" value="0">
+  <input type="hidden" name="caption_catatan" value="Masukkan nomor">
+  <input type="hidden" name="tipe_input" value="angka_only">
+  <input type="hidden" name="harga_barang_asli" value="25000">
+  <input type="hidden" name="catatan_wajib_isi" value="true">
+  <input type="hidden" name="batasi_max" value="true">
+  <input type="hidden" name="produk_digital_khusus" value="bulk">
+
+  <button type="submit">Upload Produk</button>
+</form>
+
+</body>
+</html>
